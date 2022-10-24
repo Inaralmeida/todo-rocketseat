@@ -1,0 +1,17 @@
+.radio,
+.active {
+  width: 1.09rem;
+  height: 1.09rem;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  background: transparent;
+  cursor: pointer;
+}
+.active {
+  border: 1px solid var(--purple);
+  background: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+}

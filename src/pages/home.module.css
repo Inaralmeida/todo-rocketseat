@@ -1,0 +1,17 @@
+.content {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  width: 736px;
+  margin-top: 4rem;
+}
+
+.contentList {
+  width: 100%;
+  margin-top: 1.5rem;
+}

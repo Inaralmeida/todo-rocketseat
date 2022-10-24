@@ -1,0 +1,21 @@
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+  border-top: 1px solid var(--gray-400);
+}
+
+.content p {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.content p span {
+  font-weight: bold;
+}

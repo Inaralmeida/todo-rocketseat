@@ -1,0 +1,47 @@
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.completed,
+.active {
+  flex: 1;
+  color: var(--gray-100);
+  line-height: 1.4;
+  font-size: 0.875rem;
+  text-align: start;
+}
+.completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.content input[type='radio'] {
+  width: 1.5rem;
+}
+
+.content button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.content button:hover {
+  background: var(--gray-600);
+  color: var(--danger);
+}
