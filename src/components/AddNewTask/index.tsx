@@ -10,6 +10,7 @@ interface IAddNewTask {
 }
 
 const AddNewTask = ({ onChange, inputValue, addTask }: IAddNewTask) => {
+  const hasText = inputValue.length < 1
   return (
     <section className={S.newTask}>
       <input
@@ -18,7 +19,7 @@ const AddNewTask = ({ onChange, inputValue, addTask }: IAddNewTask) => {
         value={inputValue}
         onChange={onChange}
       />
-      <button onClick={addTask}>
+      <button onClick={addTask} disabled={hasText}>
         Criar
         <PlusCircle size={16} />
       </button>

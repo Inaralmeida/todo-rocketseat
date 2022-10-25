@@ -6,11 +6,11 @@ import { useEffect, useState } from 'react'
 import { ITasksComponentProps } from '../../types'
 
 const Task = ({ task, handleCompletedTask, onDelete }: ITasksComponentProps) => {
-  const { id, isCompleted, title } = task
+  const { isCompleted, title } = task
   const [completed, setCompleted] = useState(isCompleted)
 
   function handleDeleteTask() {
-    onDelete(id)
+    onDelete(task)
   }
 
   useEffect(() => {

@@ -1,0 +1,71 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-600);
+  border: 2px solid var(--blueDark);
+  gap: 1rem;
+}
+
+.content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content header > p {
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.content > p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gray-100);
+  margin: 1rem 0;
+}
+
+.content footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content button {
+  padding: 2px 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: opacity 0.2s;
+}
+
+.content button:first-child {
+  background-color: transparent;
+  color: var(--purpleDark);
+  border: 1px solid var(--purpleDark);
+}
+
+.content button:last-child {
+  background-color: var(--blueDark);
+  color: var(--gray-100);
+  border: none;
+}
+
+.content button:hover {
+  opacity: 0.8;
+}

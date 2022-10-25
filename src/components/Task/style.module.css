@@ -28,7 +28,7 @@
   width: 1.5rem;
 }
 
-.content button {
+.content > button {
   background: transparent;
   border: 0;
   color: var(--gray-300);

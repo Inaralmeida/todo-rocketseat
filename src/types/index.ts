@@ -4,7 +4,7 @@ export type ITaskProps = {
   title: string
 }
 type CompletedTask = (task: ITaskProps) => void
-type onDelete = (id: string) => void
+type onDelete = (task: ITaskProps) => void
 
 export interface ITasksComponentProps {
   task: ITaskProps
@@ -18,3 +18,7 @@ export interface ITasksListProps {
   onDelete: onDelete
 }
 
+export interface ModalDeleteProps {
+  onDelete: () => void;
+  onClose: () => void;
+}
